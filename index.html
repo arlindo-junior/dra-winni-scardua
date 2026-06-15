@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dra. Winni Scardua</title>
+    <meta name="description" content="Site oficial da Dra. Winni Scardua. Oferecendo serviços médicos especializados em diagnóstico por imagem e ultrassonografia obstétrica, ginecológica e infantil em Serra - ES." />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -360,8 +361,8 @@
             <nav class="flex items-center gap-11 text-[18px] font-semibold text-ink">
               <a class="nav-link active text-wine" href="#">Home</a>
               <a class="nav-link" href="#sobre">Sobre</a>
-              <a class="nav-link" href="#exames">Exames</a>
-              <a class="nav-link" href="#blog">Blog</a>
+              <a class="nav-link" href="exames.html">Exames</a>
+              <a class="nav-link" href="archive.html">Blog</a>
               <a class="nav-link" href="#contato">Contato</a>
             </nav>
 
@@ -415,8 +416,6 @@
             </div>
           </div>
 
-          <div class="pointer-events-none relative hidden min-h-[720px] lg:block">
-            <img class="absolute left-0 bottom-0 w-[247px] rounded-2xl shadow-badge" src="./badge-google.png" alt="Dra. Winni Scardua, 5,0 no Google, mais de 100 avaliações" />
           </div>
         </section>
       </div>
@@ -437,7 +436,8 @@
         <!-- Wrapper to extend scroll to edges of screen on mobile, but keep normal on lg -->
         <div class="-mx-4 px-4 sm:-mx-6 sm:px-6 lg:mx-0 lg:px-0 overflow-x-auto lg:overflow-visible no-scrollbar snap-x snap-mandatory lg:snap-none">
           <div id="exames-carousel" class="relative flex lg:grid lg:grid-cols-3 gap-6 lg:gap-6 xl:gap-8 pb-4 lg:pb-0">
-            <!-- Col 1: Gestação -->
+            
+            <!-- Col 1: Para sua Gestação -->
             <div class="shrink-0 w-[85vw] sm:w-[65vw] md:w-[50vw] lg:w-auto snap-center lg:snap-align-none space-y-6">
               <div class="flex items-center gap-3 pb-3 border-b border-rose-100">
                 <svg class="h-6 w-6 text-wine" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
@@ -451,35 +451,77 @@
               
               <div class="space-y-6">
                 <!-- Card 1 -->
-                <div class="group bg-white rounded-[24px] border border-rose-100 p-4 grid grid-cols-[45%_1fr] gap-4 sm:gap-5 items-center hover:shadow-[0_16px_36px_rgba(72,40,32,0.06)] hover:border-wine/25 transition-all duration-300">
-                  <div class="w-full aspect-square flex items-center justify-center relative">
-                    <img src="./Ultrassom Morfologico.png" alt="Ultrassom Morfológico" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300" />
-                  </div>
-                  <div class="flex-1 flex flex-col justify-between">
-                    <div>
-                      <h4 class="font-bold text-ink text-[16px] mb-1 group-hover:text-wine transition-colors duration-200">Ultrassom Morfológico</h4>
-                      <p class="text-ink/80 text-[13px] leading-relaxed">Avalia o desenvolvimento do bebê e detecta alterações estruturais.</p>
+                <div class="group bg-white rounded-[24px] border border-rose-100 overflow-hidden hover:shadow-[0_16px_36px_rgba(72,40,32,0.06)] hover:border-wine/25 transition-all duration-300">
+                  <a href="single-exame.html?id=morfologico" class="block p-4 grid grid-cols-[45%_1fr] gap-4 sm:gap-5 items-center h-full">
+                    <div class="w-full aspect-square flex items-center justify-center relative bg-zinc-50 rounded-xl overflow-hidden p-2">
+                      <img src="./Ultrassom Morfologico.png" alt="Ultrassom Morfológico" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300" />
                     </div>
-                    <a href="#" class="text-wine font-bold text-[13px] mt-2 inline-flex items-center gap-1 hover:underline">
-                      Saiba mais <span class="text-sm transition-transform group-hover:translate-x-1">→</span>
-                    </a>
-                  </div>
+                    <div class="flex-1 flex flex-col justify-between h-full">
+                      <div>
+                        <h4 class="font-bold text-ink text-[16px] mb-1 group-hover:text-wine transition-colors duration-200">Ultrassom Morfológico</h4>
+                        <p class="text-ink/80 text-[12.5px] leading-snug">Avaliação detalhada da anatomia fetal e rastreamento de riscos genéticos nos trimestres da gestação.</p>
+                      </div>
+                      <span class="text-wine font-bold text-[13px] mt-2 inline-flex items-center gap-1">
+                        Saiba mais <span class="text-sm transition-transform group-hover:translate-x-1">→</span>
+                      </span>
+                    </div>
+                  </a>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="group bg-white rounded-[24px] border border-rose-100 p-4 grid grid-cols-[45%_1fr] gap-4 sm:gap-5 items-center hover:shadow-[0_16px_36px_rgba(72,40,32,0.06)] hover:border-wine/25 transition-all duration-300">
-                  <div class="w-full aspect-square flex items-center justify-center relative">
-                    <img src="./Doppler obstétrico.png" alt="Doppler Obstétrico" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300" />
-                  </div>
-                  <div class="flex-1 flex flex-col justify-between">
-                    <div>
-                      <h4 class="font-bold text-ink text-[16px] mb-1 group-hover:text-wine transition-colors duration-200">Doppler Obstétrico</h4>
-                      <p class="text-ink/80 text-[13px] leading-relaxed">Analisa o fluxo sanguíneo entre o bebê, a placenta e o útero, garantindo mais segurança.</p>
+                <div class="group bg-white rounded-[24px] border border-rose-100 overflow-hidden hover:shadow-[0_16px_36px_rgba(72,40,32,0.06)] hover:border-wine/25 transition-all duration-300">
+                  <a href="single-exame.html?id=doppler-obstetrico" class="block p-4 grid grid-cols-[45%_1fr] gap-4 sm:gap-5 items-center h-full">
+                    <div class="w-full aspect-square flex items-center justify-center relative bg-zinc-50 rounded-xl overflow-hidden p-2">
+                      <img src="./Doppler.png" alt="Doppler Obstétrico" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300" />
                     </div>
-                    <a href="#" class="text-wine font-bold text-[13px] mt-2 inline-flex items-center gap-1 hover:underline">
-                      Saiba mais <span class="text-sm transition-transform group-hover:translate-x-1">→</span>
-                    </a>
-                  </div>
+                    <div class="flex-1 flex flex-col justify-between h-full">
+                      <div>
+                        <h4 class="font-bold text-ink text-[16px] mb-1 group-hover:text-wine transition-colors duration-200">Doppler Obstétrico</h4>
+                        <p class="text-ink/80 text-[12.5px] leading-snug">Avaliação circulatória e oxigenação fetal através das artérias uterinas e umbilicais.</p>
+                      </div>
+                      <span class="text-wine font-bold text-[13px] mt-2 inline-flex items-center gap-1">
+                        Saiba mais <span class="text-sm transition-transform group-hover:translate-x-1">→</span>
+                      </span>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group bg-white rounded-[24px] border border-rose-100 overflow-hidden hover:shadow-[0_16px_36px_rgba(72,40,32,0.06)] hover:border-wine/25 transition-all duration-300">
+                  <a href="single-exame.html?id=obstetrico-rotina" class="block p-4 grid grid-cols-[45%_1fr] gap-4 sm:gap-5 items-center h-full">
+                    <div class="w-full aspect-square flex items-center justify-center relative bg-zinc-50 rounded-xl overflow-hidden p-2">
+                      <img src="./Rotina.png" alt="Ultrassom Obstétrico (Rotina)" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                    </div>
+                    <div class="flex-1 flex flex-col justify-between h-full">
+                      <div>
+                        <h4 class="font-bold text-ink text-[16px] mb-1 group-hover:text-wine transition-colors duration-200">Ultrassom Obstétrico (Rotina)</h4>
+                        <p class="text-ink/80 text-[12.5px] leading-snug">Acompanhamento básico do crescimento, líquido amniótico e batimentos cardíacos do bebê.</p>
+                      </div>
+                      <span class="text-wine font-bold text-[13px] mt-2 inline-flex items-center gap-1">
+                        Saiba mais <span class="text-sm transition-transform group-hover:translate-x-1">→</span>
+                      </span>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- Outros Exames da Categoria -->
+                <div class="pt-5 border-t border-rose-100/60 mt-6 space-y-3">
+                  <p class="text-[11px] font-bold text-wine tracking-wider uppercase mb-1">Outros exames para sua gestação:</p>
+                  
+                  <a href="single-exame.html?id=translucencia-nucal" class="group flex items-center justify-between text-ink hover:text-wine transition-colors py-1 border-b border-rose-50/40">
+                    <span class="text-[13px] font-semibold">Translucência Nucal</span>
+                    <span class="text-wine/60 text-xs font-bold transition-transform group-hover:translate-x-0.5">&rarr;</span>
+                  </a>
+                  
+                  <a href="single-exame.html?id=perfil-biofisico" class="group flex items-center justify-between text-ink hover:text-wine transition-colors py-1 border-b border-rose-50/40">
+                    <span class="text-[13px] font-semibold">Perfil Biofísico Fetal</span>
+                    <span class="text-wine/60 text-xs font-bold transition-transform group-hover:translate-x-0.5">&rarr;</span>
+                  </a>
+
+                  <a href="single-exame.html?id=colo-uterino" class="group flex items-center justify-between text-ink hover:text-wine transition-colors py-1">
+                    <span class="text-[13px] font-semibold">Avaliação do Colo Uterino</span>
+                    <span class="text-wine/60 text-xs font-bold transition-transform group-hover:translate-x-0.5">&rarr;</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -496,35 +538,77 @@
 
               <div class="space-y-6">
                 <!-- Card 1 -->
-                <div class="group bg-white rounded-[24px] border border-rose-100 p-4 grid grid-cols-[45%_1fr] gap-4 sm:gap-5 items-center hover:shadow-[0_16px_36px_rgba(72,40,32,0.06)] hover:border-wine/25 transition-all duration-300">
-                  <div class="w-full aspect-square flex items-center justify-center relative">
-                    <img src="./Ginecologico.png" alt="Ultrassom Ginecológico" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300" />
-                  </div>
-                  <div class="flex-1 flex flex-col justify-between">
-                    <div>
-                      <h4 class="font-bold text-ink text-[16px] mb-1 group-hover:text-wine transition-colors duration-200">Ultrassom Ginecológico</h4>
-                      <p class="text-ink/80 text-[13px] leading-relaxed">Avalia útero, ovários e região pélvica, auxiliando na prevenção e diagnóstico.</p>
+                <div class="group bg-white rounded-[24px] border border-rose-100 overflow-hidden hover:shadow-[0_16px_36px_rgba(72,40,32,0.06)] hover:border-wine/25 transition-all duration-300">
+                  <a href="single-exame.html?id=ginecologico" class="block p-4 grid grid-cols-[45%_1fr] gap-4 sm:gap-5 items-center h-full">
+                    <div class="w-full aspect-square flex items-center justify-center relative bg-zinc-50 rounded-xl overflow-hidden p-2">
+                      <img src="./Ginecologico.png" alt="Ultrassom Ginecológico" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300" />
                     </div>
-                    <a href="#" class="text-wine font-bold text-[13px] mt-2 inline-flex items-center gap-1 hover:underline">
-                      Saiba mais <span class="text-sm transition-transform group-hover:translate-x-1">→</span>
-                    </a>
-                  </div>
+                    <div class="flex-1 flex flex-col justify-between h-full">
+                      <div>
+                        <h4 class="font-bold text-ink text-[16px] mb-1 group-hover:text-wine transition-colors duration-200">Ultrassom Ginecológico</h4>
+                        <p class="text-ink/80 text-[12.5px] leading-snug">Avaliação preventiva do útero, ovários e região pélvica por via abdominal.</p>
+                      </div>
+                      <span class="text-wine font-bold text-[13px] mt-2 inline-flex items-center gap-1">
+                        Saiba mais <span class="text-sm transition-transform group-hover:translate-x-1">→</span>
+                      </span>
+                    </div>
+                  </a>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="group bg-white rounded-[24px] border border-rose-100 p-4 grid grid-cols-[45%_1fr] gap-4 sm:gap-5 items-center hover:shadow-[0_16px_36px_rgba(72,40,32,0.06)] hover:border-wine/25 transition-all duration-300">
-                  <div class="w-full aspect-square flex items-center justify-center relative">
-                    <img src="./Transvaginal.png" alt="Ultrassom Transvaginal" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300" />
-                  </div>
-                  <div class="flex-1 flex flex-col justify-between">
-                    <div>
-                      <h4 class="font-bold text-ink text-[16px] mb-1 group-hover:text-wine transition-colors duration-200">Ultrassom Transvaginal</h4>
-                      <p class="text-ink/80 text-[13px] leading-relaxed">Exame mais detalhado para investigação de alterações ginecológicas.</p>
+                <div class="group bg-white rounded-[24px] border border-rose-100 overflow-hidden hover:shadow-[0_16px_36px_rgba(72,40,32,0.06)] hover:border-wine/25 transition-all duration-300">
+                  <a href="single-exame.html?id=transvaginal" class="block p-4 grid grid-cols-[45%_1fr] gap-4 sm:gap-5 items-center h-full">
+                    <div class="w-full aspect-square flex items-center justify-center relative bg-zinc-50 rounded-xl overflow-hidden p-2">
+                      <img src="./Transvaginal.png" alt="Ultrassom Transvaginal" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300" />
                     </div>
-                    <a href="#" class="text-wine font-bold text-[13px] mt-2 inline-flex items-center gap-1 hover:underline">
-                      Saiba mais <span class="text-sm transition-transform group-hover:translate-x-1">→</span>
-                    </a>
-                  </div>
+                    <div class="flex-1 flex flex-col justify-between h-full">
+                      <div>
+                        <h4 class="font-bold text-ink text-[16px] mb-1 group-hover:text-wine transition-colors duration-200">Ultrassom Transvaginal</h4>
+                        <p class="text-ink/80 text-[12.5px] leading-snug">Exame de alta definição por via interna para detalhamento uterino e ovariano.</p>
+                      </div>
+                      <span class="text-wine font-bold text-[13px] mt-2 inline-flex items-center gap-1">
+                        Saiba mais <span class="text-sm transition-transform group-hover:translate-x-1">→</span>
+                      </span>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group bg-white rounded-[24px] border border-rose-100 overflow-hidden hover:shadow-[0_16px_36px_rgba(72,40,32,0.06)] hover:border-wine/25 transition-all duration-300">
+                  <a href="single-exame.html?id=mamas" class="block p-4 grid grid-cols-[45%_1fr] gap-4 sm:gap-5 items-center h-full">
+                    <div class="w-full aspect-square flex items-center justify-center relative bg-zinc-50 rounded-xl overflow-hidden p-2">
+                      <img src="./Mamas.png" alt="Ultrassom de Mamas" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                    </div>
+                    <div class="flex-1 flex flex-col justify-between h-full">
+                      <div>
+                        <h4 class="font-bold text-ink text-[16px] mb-1 group-hover:text-wine transition-colors duration-200">Ultrassom de Mamas</h4>
+                        <p class="text-ink/80 text-[12.5px] leading-snug">Exame essencial para avaliação e prevenção mamária, detectando cistos e nódulos.</p>
+                      </div>
+                      <span class="text-wine font-bold text-[13px] mt-2 inline-flex items-center gap-1">
+                        Saiba mais <span class="text-sm transition-transform group-hover:translate-x-1">→</span>
+                      </span>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- Outros Exames da Categoria -->
+                <div class="pt-5 border-t border-rose-100/60 mt-6 space-y-3">
+                  <p class="text-[11px] font-bold text-wine tracking-wider uppercase mb-1">Outros exames de saúde da mulher:</p>
+                  
+                  <a href="single-exame.html?id=tireoide" class="group flex items-center justify-between text-ink hover:text-wine transition-colors py-1 border-b border-rose-50/40">
+                    <span class="text-[13px] font-semibold">Tireoide</span>
+                    <span class="text-wine/60 text-xs font-bold transition-transform group-hover:translate-x-0.5">&rarr;</span>
+                  </a>
+                  
+                  <a href="single-exame.html?id=abdome-total" class="group flex items-center justify-between text-ink hover:text-wine transition-colors py-1 border-b border-rose-50/40">
+                    <span class="text-[13px] font-semibold">Abdome Total</span>
+                    <span class="text-wine/60 text-xs font-bold transition-transform group-hover:translate-x-0.5">&rarr;</span>
+                  </a>
+
+                  <a href="single-exame.html?id=rins-vias-urinarias" class="group flex items-center justify-between text-ink hover:text-wine transition-colors py-1">
+                    <span class="text-[13px] font-semibold">Rins e Vias Urinárias</span>
+                    <span class="text-wine/60 text-xs font-bold transition-transform group-hover:translate-x-0.5">&rarr;</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -542,38 +626,81 @@
 
               <div class="space-y-6">
                 <!-- Card 1 -->
-                <div class="group bg-white rounded-[24px] border border-rose-100 p-4 grid grid-cols-[45%_1fr] gap-4 sm:gap-5 items-center hover:shadow-[0_16px_36px_rgba(72,40,32,0.06)] hover:border-wine/25 transition-all duration-300">
-                  <div class="w-full aspect-square flex items-center justify-center relative">
-                    <img src="./Transfontanela.png" alt="Transfontanela" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300" />
-                  </div>
-                  <div class="flex-1 flex flex-col justify-between">
-                    <div>
-                      <h4 class="font-bold text-ink text-[16px] mb-1 group-hover:text-wine transition-colors duration-200">Transfontanela</h4>
-                      <p class="text-ink/80 text-[13px] leading-relaxed">Avalia o cérebro do bebê através da moleira, de forma segura e indolor.</p>
+                <div class="group bg-white rounded-[24px] border border-rose-100 overflow-hidden hover:shadow-[0_16px_36px_rgba(72,40,32,0.06)] hover:border-wine/25 transition-all duration-300">
+                  <a href="single-exame.html?id=transfontanela" class="block p-4 grid grid-cols-[45%_1fr] gap-4 sm:gap-5 items-center h-full">
+                    <div class="w-full aspect-square flex items-center justify-center relative bg-zinc-50 rounded-xl overflow-hidden p-2">
+                      <img src="./Transfontanela.png" alt="Ultrassom Transfontanela" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300" />
                     </div>
-                    <a href="#" class="text-wine font-bold text-[13px] mt-2 inline-flex items-center gap-1 hover:underline">
-                      Saiba mais <span class="text-sm transition-transform group-hover:translate-x-1">→</span>
-                    </a>
-                  </div>
+                    <div class="flex-1 flex flex-col justify-between h-full">
+                      <div>
+                        <h4 class="font-bold text-ink text-[16px] mb-1 group-hover:text-wine transition-colors duration-200">Ultrassom Transfontanela</h4>
+                        <p class="text-ink/80 text-[12.5px] leading-snug">Avalia as estruturas cerebrais do bebê através da moleira de forma indolor.</p>
+                      </div>
+                      <span class="text-wine font-bold text-[13px] mt-2 inline-flex items-center gap-1">
+                        Saiba mais <span class="text-sm transition-transform group-hover:translate-x-1">→</span>
+                      </span>
+                    </div>
+                  </a>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="group bg-white rounded-[24px] border border-rose-100 p-4 grid grid-cols-[45%_1fr] gap-4 sm:gap-5 items-center hover:shadow-[0_16px_36px_rgba(72,40,32,0.06)] hover:border-wine/25 transition-all duration-300">
-                  <div class="w-full aspect-square flex items-center justify-center relative">
-                    <img src="./Quadril.png" alt="Quadril" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300" />
-                  </div>
-                  <div class="flex-1 flex flex-col justify-between">
-                    <div>
-                      <h4 class="font-bold text-ink text-[16px] mb-1 group-hover:text-wine transition-colors duration-200">Quadril (Método de Graf)</h4>
-                      <p class="text-ink/80 text-[13px] leading-relaxed">Detecta precocemente alterações no desenvolvimento do quadril do bebê.</p>
+                <div class="group bg-white rounded-[24px] border border-rose-100 overflow-hidden hover:shadow-[0_16px_36px_rgba(72,40,32,0.06)] hover:border-wine/25 transition-all duration-300">
+                  <a href="single-exame.html?id=quadril" class="block p-4 grid grid-cols-[45%_1fr] gap-4 sm:gap-5 items-center h-full">
+                    <div class="w-full aspect-square flex items-center justify-center relative bg-zinc-50 rounded-xl overflow-hidden p-2">
+                      <img src="./Quadril.png" alt="Ultrassom de Quadril (Graf)" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300" />
                     </div>
-                    <a href="#" class="text-wine font-bold text-[13px] mt-2 inline-flex items-center gap-1 hover:underline">
-                      Saiba mais <span class="text-sm transition-transform group-hover:translate-x-1">→</span>
-                    </a>
-                  </div>
+                    <div class="flex-1 flex flex-col justify-between h-full">
+                      <div>
+                        <h4 class="font-bold text-ink text-[16px] mb-1 group-hover:text-wine transition-colors duration-200">Ultrassom de Quadril (Graf)</h4>
+                        <p class="text-ink/80 text-[12.5px] leading-snug">Exame padrão ouro para detecção precoce de displasia do desenvolvimento do quadril.</p>
+                      </div>
+                      <span class="text-wine font-bold text-[13px] mt-2 inline-flex items-center gap-1">
+                        Saiba mais <span class="text-sm transition-transform group-hover:translate-x-1">→</span>
+                      </span>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group bg-white rounded-[24px] border border-rose-100 overflow-hidden hover:shadow-[0_16px_36px_rgba(72,40,32,0.06)] hover:border-wine/25 transition-all duration-300">
+                  <a href="single-exame.html?id=abdome-infantil" class="block p-4 grid grid-cols-[45%_1fr] gap-4 sm:gap-5 items-center h-full">
+                    <div class="w-full aspect-square flex items-center justify-center relative bg-zinc-50 rounded-xl overflow-hidden p-2">
+                      <img src="./Abdome.png" alt="Ultrassom de Abdome Infantil" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                    </div>
+                    <div class="flex-1 flex flex-col justify-between h-full">
+                      <div>
+                        <h4 class="font-bold text-ink text-[16px] mb-1 group-hover:text-wine transition-colors duration-200">Ultrassom de Abdome Infantil</h4>
+                        <p class="text-ink/80 text-[12.5px] leading-snug">Avaliação detalhada dos órgãos abdominais em bebês e crianças sob indicação pediátrica.</p>
+                      </div>
+                      <span class="text-wine font-bold text-[13px] mt-2 inline-flex items-center gap-1">
+                        Saiba mais <span class="text-sm transition-transform group-hover:translate-x-1">→</span>
+                      </span>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- Outros Exames da Categoria -->
+                <div class="pt-5 border-t border-rose-100/60 mt-6 space-y-3">
+                  <p class="text-[11px] font-bold text-wine tracking-wider uppercase mb-1">Outros exames de cuidado infantil:</p>
+                  
+                  <a href="single-exame.html?id=pesquisa-adenite" class="group flex items-center justify-between text-ink hover:text-wine transition-colors py-1 border-b border-rose-50/40">
+                    <span class="text-[13px] font-semibold">Pesquisa de Adenite</span>
+                    <span class="text-wine/60 text-xs font-bold transition-transform group-hover:translate-x-0.5">&rarr;</span>
+                  </a>
+                  
+                  <a href="single-exame.html?id=partes-moles-pediatrico" class="group flex items-center justify-between text-ink hover:text-wine transition-colors py-1 border-b border-rose-50/40">
+                    <span class="text-[13px] font-semibold">Partes Moles Pediátrico</span>
+                    <span class="text-wine/60 text-xs font-bold transition-transform group-hover:translate-x-0.5">&rarr;</span>
+                  </a>
+
+                  <a href="single-exame.html?id=refluxo-pediatrico" class="group flex items-center justify-between text-ink hover:text-wine transition-colors py-1">
+                    <span class="text-[13px] font-semibold">Refluxo Pediátrico</span>
+                    <span class="text-wine/60 text-xs font-bold transition-transform group-hover:translate-x-0.5">&rarr;</span>
+                  </a>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
 
@@ -616,7 +743,7 @@
         </div>
 
         <div class="mt-16 text-center">
-          <a class="inline-flex items-center gap-2.5 rounded-full border border-wine/40 px-9 py-4 text-[15px] font-bold text-wine transition-all duration-200 hover:bg-wine hover:text-white hover:border-wine hover:shadow-[0_10px_25px_rgba(180,140,140,0.15)]" href="#exames">
+          <a class="inline-flex items-center gap-2.5 rounded-full border border-wine/40 px-9 py-4 text-[15px] font-bold text-wine transition-all duration-200 hover:bg-wine hover:text-white hover:border-wine hover:shadow-[0_10px_25px_rgba(180,140,140,0.15)]" href="exames.html">
             <i class="fa-regular fa-calendar text-[16px]"></i>
             Ver todos os exames
             <span class="text-lg leading-none">→</span>
@@ -849,67 +976,74 @@
           </div>
         </div>
 
-        <!-- Wrapper to extend scroll to edges of screen on mobile, but keep normal on md/lg -->
         <div class="-mx-6 px-6 sm:-mx-10 sm:px-10 md:mx-0 md:px-0 overflow-x-auto md:overflow-visible no-scrollbar snap-x snap-mandatory md:snap-none">
           <div id="blog-carousel" class="relative flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 pb-4 md:pb-0">
             <!-- Card 1 -->
             <article class="shrink-0 w-[78vw] sm:w-[55vw] md:w-auto snap-center md:snap-align-none group bg-white rounded-2xl overflow-hidden border border-rose/5 shadow-[0_4px_20px_rgba(0,0,0,0.01)] hover:shadow-[0_12px_30px_rgba(72,40,32,0.04)] transition-all duration-300">
-              <div class="aspect-[16/11] overflow-hidden bg-zinc-100">
-                <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=400&h=275&q=80" alt="Ultrassom morfológico" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-              </div>
-              <div class="p-6">
-                <h3 class="font-bold text-ink text-[16px] leading-snug mb-4 line-clamp-2 group-hover:text-wine transition-colors duration-200">
-                  Ultrassom morfológico: o que é e qual a importância?
-                </h3>
-                <a href="#" class="inline-flex items-center gap-2 text-wine font-bold text-[13px]">
-                  Ler artigo <span class="text-lg leading-none transition-transform group-hover:translate-x-1">&rarr;</span>
-                </a>
-              </div>
+              <a href="single.html?id=morfologico-importancia" class="block h-full">
+                <div class="aspect-[16/11] overflow-hidden bg-zinc-100">
+                  <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=400&h=275&q=80" alt="Ultrassom morfológico" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div class="p-6">
+                  <h3 class="font-bold text-ink text-[16px] leading-snug mb-4 line-clamp-2 group-hover:text-wine transition-colors duration-200">
+                    Ultrassom morfológico: o que é e qual a importância?
+                  </h3>
+                  <span class="inline-flex items-center gap-2 text-wine font-bold text-[13px]">
+                    Ler artigo <span class="text-lg leading-none transition-transform group-hover:translate-x-1">&rarr;</span>
+                  </span>
+                </div>
+              </a>
             </article>
 
             <!-- Card 2 -->
             <article class="shrink-0 w-[78vw] sm:w-[55vw] md:w-auto snap-center md:snap-align-none group bg-white rounded-2xl overflow-hidden border border-rose/5 shadow-[0_4px_20px_rgba(0,0,0,0.01)] hover:shadow-[0_12px_30px_rgba(72,40,32,0.04)] transition-all duration-300">
-              <div class="aspect-[16/11] overflow-hidden bg-zinc-100">
-                <img src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=400&h=275&q=80" alt="Transfontanela" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-              </div>
-              <div class="p-6">
-                <h3 class="font-bold text-ink text-[16px] leading-snug mb-4 line-clamp-2 group-hover:text-wine transition-colors duration-200">
-                  Transfontanela: segurança e cuidado nos primeiros meses
-                </h3>
-                <a href="#" class="inline-flex items-center gap-2 text-wine font-bold text-[13px]">
-                  Ler artigo <span class="text-lg leading-none transition-transform group-hover:translate-x-1">&rarr;</span>
-                </a>
-              </div>
+              <a href="single.html?id=transfontanela-seguranca" class="block h-full">
+                <div class="aspect-[16/11] overflow-hidden bg-zinc-100">
+                  <img src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=400&h=275&q=80" alt="Transfontanela" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div class="p-6">
+                  <h3 class="font-bold text-ink text-[16px] leading-snug mb-4 line-clamp-2 group-hover:text-wine transition-colors duration-200">
+                    Transfontanela: segurança e cuidado nos primeiros meses
+                  </h3>
+                  <span class="inline-flex items-center gap-2 text-wine font-bold text-[13px]">
+                    Ler artigo <span class="text-lg leading-none transition-transform group-hover:translate-x-1">&rarr;</span>
+                  </span>
+                </div>
+              </a>
             </article>
 
             <!-- Card 3 -->
             <article class="shrink-0 w-[78vw] sm:w-[55vw] md:w-auto snap-center md:snap-align-none group bg-white rounded-2xl overflow-hidden border border-rose/5 shadow-[0_4px_20px_rgba(0,0,0,0.01)] hover:shadow-[0_12px_30px_rgba(72,40,32,0.04)] transition-all duration-300">
-              <div class="aspect-[16/11] overflow-hidden bg-zinc-100">
-                <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&w=400&h=275&q=80" alt="Doppler Obstétrico" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-              </div>
-              <div class="p-6">
-                <h3 class="font-bold text-ink text-[16px] leading-snug mb-4 line-clamp-2 group-hover:text-wine transition-colors duration-200">
-                  Quando fazer o Doppler Obstétrico?
-                </h3>
-                <a href="#" class="inline-flex items-center gap-2 text-wine font-bold text-[13px]">
-                  Ler artigo <span class="text-lg leading-none transition-transform group-hover:translate-x-1">&rarr;</span>
-                </a>
-              </div>
+              <a href="single.html?id=quando-doppler-obstetrico" class="block h-full">
+                <div class="aspect-[16/11] overflow-hidden bg-zinc-100">
+                  <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&w=400&h=275&q=80" alt="Doppler Obstétrico" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div class="p-6">
+                  <h3 class="font-bold text-ink text-[16px] leading-snug mb-4 line-clamp-2 group-hover:text-wine transition-colors duration-200">
+                    Quando fazer o Doppler Obstétrico?
+                  </h3>
+                  <span class="inline-flex items-center gap-2 text-wine font-bold text-[13px]">
+                    Ler artigo <span class="text-lg leading-none transition-transform group-hover:translate-x-1">&rarr;</span>
+                  </span>
+                </div>
+              </a>
             </article>
 
             <!-- Card 4 -->
             <article class="shrink-0 w-[78vw] sm:w-[55vw] md:w-auto snap-center md:snap-align-none group bg-white rounded-2xl overflow-hidden border border-rose/5 shadow-[0_4px_20px_rgba(0,0,0,0.01)] hover:shadow-[0_12px_30px_rgba(72,40,32,0.04)] transition-all duration-300">
-              <div class="aspect-[16/11] overflow-hidden bg-zinc-100">
-                <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=400&h=275&q=80" alt="Desenvolvimento do bebê" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-              </div>
-              <div class="p-6">
-                <h3 class="font-bold text-ink text-[16px] leading-snug mb-4 line-clamp-2 group-hover:text-wine transition-colors duration-200">
-                  Exames que monitoram o desenvolvimento do bebê
-                </h3>
-                <a href="#" class="inline-flex items-center gap-2 text-wine font-bold text-[13px]">
-                  Ler artigo <span class="text-lg leading-none transition-transform group-hover:translate-x-1">&rarr;</span>
-                </a>
-              </div>
+              <a href="single.html?id=exames-desenvolvimento-bebe" class="block h-full">
+                <div class="aspect-[16/11] overflow-hidden bg-zinc-100">
+                  <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=400&h=275&q=80" alt="Desenvolvimento do bebê" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div class="p-6">
+                  <h3 class="font-bold text-ink text-[16px] leading-snug mb-4 line-clamp-2 group-hover:text-wine transition-colors duration-200">
+                    Exames que monitoram o desenvolvimento do bebê
+                  </h3>
+                  <span class="inline-flex items-center gap-2 text-wine font-bold text-[13px]">
+                    Ler artigo <span class="text-lg leading-none transition-transform group-hover:translate-x-1">&rarr;</span>
+                  </span>
+                </div>
+              </a>
             </article>
           </div>
         </div>
@@ -923,7 +1057,7 @@
         </div>
 
         <div class="mt-16 text-center">
-          <a class="inline-flex items-center gap-3 rounded-full border border-wine px-9 py-4 text-[16px] font-bold text-wine transition-all duration-200 hover:bg-wine hover:text-white hover:shadow-[0_10px_25px_rgba(180,140,140,0.15)]" href="#">
+          <a class="inline-flex items-center gap-3 rounded-full border border-wine px-9 py-4 text-[16px] font-bold text-wine transition-all duration-200 hover:bg-wine hover:text-white hover:shadow-[0_10px_25px_rgba(180,140,140,0.15)]" href="archive.html">
             Ver todos os artigos
             <span class="text-lg leading-none">→</span>
           </a>
@@ -938,7 +1072,7 @@
           <!-- Column 1: Doctor Photo (4/12 columns) -->
           <div class="lg:col-span-4">
             <div class="rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(72,40,32,0.08)] aspect-[4/5] bg-blush border border-rose/5">
-              <img src="about.JPG" alt="Dra. Winni Scardua" class="w-full h-full object-cover grayscale-[10%]" />
+              <img src="About.png" alt="Dra. Winni Scardua" class="w-full h-full object-cover grayscale-[10%]" />
             </div>
           </div>
 
@@ -1197,8 +1331,8 @@
             <ul class="space-y-2.5 text-[14px]">
               <li><a href="#" class="text-ink hover:text-wine transition-colors duration-150">Home</a></li>
               <li><a href="#sobre" class="text-ink hover:text-wine transition-colors duration-150">Sobre</a></li>
-              <li><a href="#exames" class="text-ink hover:text-wine transition-colors duration-150">Exames</a></li>
-              <li><a href="#blog" class="text-ink hover:text-wine transition-colors duration-150">Blog</a></li>
+              <li><a href="exames.html" class="text-ink hover:text-wine transition-colors duration-150">Exames</a></li>
+              <li><a href="archive.html" class="text-ink hover:text-wine transition-colors duration-150">Blog</a></li>
               <li><a href="#contato" class="text-ink hover:text-wine transition-colors duration-150">Contato</a></li>
             </ul>
           </div>
@@ -1437,8 +1571,8 @@
       <nav class="flex flex-col gap-8 px-10 py-12 text-[22px] font-bold text-ink">
         <a class="mobile-nav-link text-wine" href="#" onclick="toggleMobileMenu(false)">Home</a>
         <a class="mobile-nav-link" href="#sobre" onclick="toggleMobileMenu(false)">Sobre</a>
-        <a class="mobile-nav-link" href="#exames" onclick="toggleMobileMenu(false)">Exames</a>
-        <a class="mobile-nav-link" href="#blog" onclick="toggleMobileMenu(false)">Blog</a>
+        <a class="mobile-nav-link" href="exames.html" onclick="toggleMobileMenu(false)">Exames</a>
+        <a class="mobile-nav-link" href="archive.html" onclick="toggleMobileMenu(false)">Blog</a>
         <a class="mobile-nav-link" href="#contato" onclick="toggleMobileMenu(false)">Contato</a>
       </nav>
 
